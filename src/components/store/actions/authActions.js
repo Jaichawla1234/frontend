@@ -44,7 +44,7 @@ export const userLogin = (data) => {
         }
 
         try {
-            const response = await axios.post(url, data, config);
+            const response = await axios.post('https://chat-app-it-b-c.herokuapp.com/user-register', data, config);
             localStorage.setItem('authToken', response.data.token);
             dispath({
                 type: USER_LOGIN_SUCCESS,
