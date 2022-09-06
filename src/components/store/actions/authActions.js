@@ -1,13 +1,13 @@
 import axios from 'axios';
 import {REGISTER_FAIL,REGISTER_SUCCESS,USER_LOGIN_SUCCESS,USER_LOGIN_FAIL} from "../types/authType";
-const url='https://chat-app-it-b-c.herokuapp.com/';
+// const url='https://chat-app-it-b-c.herokuapp.com/';
 export const userRegister = (data) => {
    
      return async (dispatch) => {
 
           const config = {
                headers: {
-                    'Content-Type':'application/josn'
+                    'Content-Type':'application/json'
                } 
           }
           try{
