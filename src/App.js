@@ -10,6 +10,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+      <button onClick={callApi}>call api</button>
         <Routes>
           <Route path="/messenger/login" element={<Login />}/>
           <Route path="/messenger/register" element={<Register/>}/>
@@ -17,7 +18,14 @@ function App() {
             
           
         </Routes>
+        
       </BrowserRouter>
+
+      function callApi() {
+        fetch('https://chat-app-it-b-c.herokuapp.com/',{
+          method:'GET'})
+          .then(data=>alert(JSON.stringify(json)))
+      }
 
     </div>
   );
