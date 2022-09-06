@@ -8,9 +8,11 @@ import ProtectRoute from "./components/ProtectRoute";
 
 function App() {
   return (
+    
     <div>
-      <BrowserRouter>
       <button onClick={callApi}>call api</button>
+      <BrowserRouter>
+      
         <Routes>
           <Route path="/messenger/login" element={<Login />}/>
           <Route path="/messenger/register" element={<Register/>}/>
