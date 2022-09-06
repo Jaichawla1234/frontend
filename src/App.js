@@ -21,14 +21,15 @@ function App() {
         
       </BrowserRouter>
 
-      function callApi() {
-        fetch('https://chat-app-it-b-c.herokuapp.com/',{
-          method:'GET'})
-          .then(data=>alert(JSON.stringify(json)))
-      }
-
     </div>
   );
+}
+
+
+function callApi() {
+  fetch('https://chat-app-it-b-c.herokuapp.com/',{
+    method:'GET'})
+    .then(data=>alert(JSON.stringify(json)))
 }
 
 export default App;
